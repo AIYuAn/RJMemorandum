@@ -13,6 +13,9 @@
 		9A4799211CC67E3D00F237C0 /* RJMemorandum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A47991F1CC67E3D00F237C0 /* RJMemorandum.xcdatamodeld */; };
 		9A4799231CC67E3D00F237C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4799221CC67E3D00F237C0 /* Assets.xcassets */; };
 		9A4799311CC67E3D00F237C0 /* RJMemorandumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4799301CC67E3D00F237C0 /* RJMemorandumTests.m */; };
+		9AD7524B1CC86FB800F68C37 /* RJItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7524A1CC86FB800F68C37 /* RJItem.m */; };
+		9AD752521CC872FA00F68C37 /* RJItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD752511CC872FA00F68C37 /* RJItemStore.m */; };
+		9AD752561CC8CC6600F68C37 /* RJCheckItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD752551CC8CC6600F68C37 /* RJCheckItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,12 @@
 		9A47992C1CC67E3D00F237C0 /* RJMemorandumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJMemorandumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4799301CC67E3D00F237C0 /* RJMemorandumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMemorandumTests.m; sourceTree = "<group>"; };
 		9A4799321CC67E3D00F237C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD752491CC86FB800F68C37 /* RJItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJItem.h; sourceTree = "<group>"; };
+		9AD7524A1CC86FB800F68C37 /* RJItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJItem.m; sourceTree = "<group>"; };
+		9AD752501CC872FA00F68C37 /* RJItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJItemStore.h; sourceTree = "<group>"; };
+		9AD752511CC872FA00F68C37 /* RJItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJItemStore.m; sourceTree = "<group>"; };
+		9AD752541CC8CC6600F68C37 /* RJCheckItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJCheckItemViewController.h; sourceTree = "<group>"; };
+		9AD752551CC8CC6600F68C37 /* RJCheckItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJCheckItemViewController.m; sourceTree = "<group>"; };
 		E6DC16FD7876D3A3445C50F8 /* Pods-RJMemorandum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJMemorandum.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RJMemorandum/Pods-RJMemorandum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +109,14 @@
 		9A4799121CC67E3D00F237C0 /* RJMemorandum */ = {
 			isa = PBXGroup;
 			children = (
+				9AD752461CC86F6300F68C37 /* Managers */,
+				9AD752471CC86F6300F68C37 /* Stores */,
+				9AD752481CC86F6300F68C37 /* Helpers */,
+				9AD752411CC86E6F00F68C37 /* Service */,
+				9AD752431CC86E6F00F68C37 /* Models */,
+				9AD752441CC86E6F00F68C37 /* Views */,
+				9AD752421CC86E6F00F68C37 /* Controllers */,
+				9AD752451CC86E6F00F68C37 /* Resource */,
 				9A4799161CC67E3D00F237C0 /* AppDelegate.h */,
 				9A4799171CC67E3D00F237C0 /* AppDelegate.m */,
 				9A4799221CC67E3D00F237C0 /* Assets.xcassets */,
@@ -125,6 +142,84 @@
 				9A4799321CC67E3D00F237C0 /* Info.plist */,
 			);
 			path = RJMemorandumTests;
+			sourceTree = "<group>";
+		};
+		9AD752411CC86E6F00F68C37 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9AD752421CC86E6F00F68C37 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AD752531CC8CC4700F68C37 /* RJCheckItemViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9AD752431CC86E6F00F68C37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AD752491CC86FB800F68C37 /* RJItem.h */,
+				9AD7524A1CC86FB800F68C37 /* RJItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9AD752441CC86E6F00F68C37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9AD752451CC86E6F00F68C37 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9AD752461CC86F6300F68C37 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9AD752471CC86F6300F68C37 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				9AD7524F1CC872FA00F68C37 /* RJItemStore */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		9AD752481CC86F6300F68C37 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9AD7524F1CC872FA00F68C37 /* RJItemStore */ = {
+			isa = PBXGroup;
+			children = (
+				9AD752501CC872FA00F68C37 /* RJItemStore.h */,
+				9AD752511CC872FA00F68C37 /* RJItemStore.m */,
+			);
+			path = RJItemStore;
+			sourceTree = "<group>";
+		};
+		9AD752531CC8CC4700F68C37 /* RJCheckItemViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9AD752541CC8CC6600F68C37 /* RJCheckItemViewController.h */,
+				9AD752551CC8CC6600F68C37 /* RJCheckItemViewController.m */,
+			);
+			path = RJCheckItemViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +373,9 @@
 			files = (
 				9A4799181CC67E3D00F237C0 /* AppDelegate.m in Sources */,
 				9A4799211CC67E3D00F237C0 /* RJMemorandum.xcdatamodeld in Sources */,
+				9AD7524B1CC86FB800F68C37 /* RJItem.m in Sources */,
+				9AD752521CC872FA00F68C37 /* RJItemStore.m in Sources */,
+				9AD752561CC8CC6600F68C37 /* RJCheckItemViewController.m in Sources */,
 				9A4799151CC67E3D00F237C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RJMemorandum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rjlqy.memorandum.RJMemorandum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -401,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RJMemorandum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rjlqy.memorandum.RJMemorandum;
 				PRODUCT_NAME = "$(TARGET_NAME)";

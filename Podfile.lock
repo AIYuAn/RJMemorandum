@@ -4,17 +4,20 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - Masonry (1.0.0)
+  - ZLSwipeableView (0.0.8)
 
 DEPENDENCIES:
   - CYLTabBarController
   - FMDB
   - Masonry
+  - ZLSwipeableView
 
 SPEC CHECKSUMS:
   CYLTabBarController: ae338979346b77c69ed0dab7853c9c10f231acef
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  ZLSwipeableView: df385760ff4838935cdbcb62878ac5acd7355949
 
-PODFILE CHECKSUM: 99c655410e66a59df6aaf40f5ae02441e8064db1
+PODFILE CHECKSUM: 107dbb85b978d1d53f498c378c8361c4044c9411
 
 COCOAPODS: 1.0.0.beta.2
