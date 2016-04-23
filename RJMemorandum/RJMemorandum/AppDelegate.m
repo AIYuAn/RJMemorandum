@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RJMacro.h"
+#import "CYLTabBarController.h"
+#import "RJCheckItemViewController.h"
+#import "RJItemListViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    RJCheckItemViewController *checkVC = [[RJCheckItemViewController alloc]init];
+    RJItemListViewController *listVC = [[RJItemListViewController alloc]init];
+    CYLTabBarController *tabBarController = [[CYLTabBarController alloc] init];
+    [self customizeTabBarForController:tabBarController];
+    [self setUpTabBarItemTextAttributes];
+    tabBarController.viewControllers = @[checkVC,listVC];
+    UINavigationController *mainNav = [[UINavigationController alloc]initWithRootViewController:tabBarController];
+    mainNav.navigationBar.translucent = NO;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController =mainNav;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -123,5 +138,52 @@
         }
     }
 }
-
+#pragma mark - tabbar
+- (void)customizeTabBarForController:(CYLTabBarController *)tabBarController {
+    NSDictionary *dict1 = @{
+                            CYLTabBarItemTitle:@"随便看看",
+                            CYLTabBarItemImage:@"ic_home_gray.png",
+                            CYLTabBarItemSelectedImage:@"ic_home_blue.png",
+                            };
+    NSDictionary *dict2 = @{
+                            CYLTabBarItemTitle:@"全部记录",
+                            CYLTabBarItemImage:@"ic_checkList_gray.png",
+                            CYLTabBarItemSelectedImage : @"ic_checkList_blue.png",
+                            };
+    NSArray *tabBarItemsAttributes = @[dict1,dict2];
+    tabBarController.tabBarItemsAttributes = tabBarItemsAttributes;
+}
+- (void)setUpTabBarItemTextAttributes {
+    // 普通状态下的文字属性
+    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
+    normalAttrs[NSForegroundColorAttributeName] = RGBACOLOR(189, 195, 199, 1);
+    normalAttrs[NSFontAttributeName] =
+    [UIFont fontWithName:@"STHeitiSC-Light" size:10];
+    
+    // 选中状态下的文字属性
+    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+    selectedAttrs[NSForegroundColorAttributeName] = RGBCOLOR(52, 152, 219);
+    selectedAttrs[NSFontAttributeName] =
+    [UIFont fontWithName:@"STHeitiSC-Light" size:10];
+    
+    // 设置文字属性
+    UITabBarItem *tabBar = [UITabBarItem appearance];
+    [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateHighlighted];
+    [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+    UITabBar *tabBarAppearance = [UITabBar appearance];
+    [tabBarAppearance setBackgroundImage:[self getImageByColor:RGBACOLOR(255, 255, 255, 0.95)]];
+}
+-(UIImage*) getImageByColor:(UIColor*)color
+{
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
 @end

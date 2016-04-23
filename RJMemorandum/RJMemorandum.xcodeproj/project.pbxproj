@@ -13,6 +13,16 @@
 		9A4799211CC67E3D00F237C0 /* RJMemorandum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A47991F1CC67E3D00F237C0 /* RJMemorandum.xcdatamodeld */; };
 		9A4799231CC67E3D00F237C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4799221CC67E3D00F237C0 /* Assets.xcassets */; };
 		9A4799311CC67E3D00F237C0 /* RJMemorandumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4799301CC67E3D00F237C0 /* RJMemorandumTests.m */; };
+		9A8F49111CCB114A00F9AAA2 /* ic_home_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F490B1CCB114A00F9AAA2 /* ic_home_blue@2x.png */; };
+		9A8F49121CCB114A00F9AAA2 /* ic_home_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F490C1CCB114A00F9AAA2 /* ic_home_gray@2x.png */; };
+		9A8F49131CCB114A00F9AAA2 /* ic_checkList_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F490D1CCB114A00F9AAA2 /* ic_checkList_blue@2x.png */; };
+		9A8F49141CCB114A00F9AAA2 /* ic_checkList_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F490E1CCB114A00F9AAA2 /* ic_checkList_gray@2x.png */; };
+		9A8F49151CCB114A00F9AAA2 /* ic_addNewItem_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F490F1CCB114A00F9AAA2 /* ic_addNewItem_gray@2x.png */; };
+		9A8F49161CCB114A00F9AAA2 /* ic_addNewItem_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F49101CCB114A00F9AAA2 /* ic_addNewItem_blue@2x.png */; };
+		9A8F491A1CCB121700F9AAA2 /* CYLPlusButtonSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F49191CCB121700F9AAA2 /* CYLPlusButtonSubclass.m */; };
+		9A8F491D1CCB128F00F9AAA2 /* btn_addpost_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F491B1CCB128F00F9AAA2 /* btn_addpost_pressed@2x.png */; };
+		9A8F491E1CCB128F00F9AAA2 /* btn_addpost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F491C1CCB128F00F9AAA2 /* btn_addpost@2x.png */; };
+		9A8F49261CCB140E00F9AAA2 /* RJItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F49251CCB140E00F9AAA2 /* RJItemListViewController.m */; };
 		9AD7524B1CC86FB800F68C37 /* RJItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7524A1CC86FB800F68C37 /* RJItem.m */; };
 		9AD752521CC872FA00F68C37 /* RJItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD752511CC872FA00F68C37 /* RJItemStore.m */; };
 		9AD752561CC8CC6600F68C37 /* RJCheckItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD752551CC8CC6600F68C37 /* RJCheckItemViewController.m */; };
@@ -41,6 +51,19 @@
 		9A47992C1CC67E3D00F237C0 /* RJMemorandumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJMemorandumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4799301CC67E3D00F237C0 /* RJMemorandumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMemorandumTests.m; sourceTree = "<group>"; };
 		9A4799321CC67E3D00F237C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A8F490B1CCB114A00F9AAA2 /* ic_home_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_home_blue@2x.png"; sourceTree = "<group>"; };
+		9A8F490C1CCB114A00F9AAA2 /* ic_home_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_home_gray@2x.png"; sourceTree = "<group>"; };
+		9A8F490D1CCB114A00F9AAA2 /* ic_checkList_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_checkList_blue@2x.png"; sourceTree = "<group>"; };
+		9A8F490E1CCB114A00F9AAA2 /* ic_checkList_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_checkList_gray@2x.png"; sourceTree = "<group>"; };
+		9A8F490F1CCB114A00F9AAA2 /* ic_addNewItem_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_addNewItem_gray@2x.png"; sourceTree = "<group>"; };
+		9A8F49101CCB114A00F9AAA2 /* ic_addNewItem_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_addNewItem_blue@2x.png"; sourceTree = "<group>"; };
+		9A8F49181CCB121700F9AAA2 /* CYLPlusButtonSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButtonSubclass.h; sourceTree = "<group>"; };
+		9A8F49191CCB121700F9AAA2 /* CYLPlusButtonSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButtonSubclass.m; sourceTree = "<group>"; };
+		9A8F491B1CCB128F00F9AAA2 /* btn_addpost_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_addpost_pressed@2x.png"; sourceTree = "<group>"; };
+		9A8F491C1CCB128F00F9AAA2 /* btn_addpost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_addpost@2x.png"; sourceTree = "<group>"; };
+		9A8F491F1CCB136000F9AAA2 /* RJMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMacro.h; sourceTree = "<group>"; };
+		9A8F49241CCB140E00F9AAA2 /* RJItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJItemListViewController.h; sourceTree = "<group>"; };
+		9A8F49251CCB140E00F9AAA2 /* RJItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJItemListViewController.m; sourceTree = "<group>"; };
 		9AD752491CC86FB800F68C37 /* RJItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJItem.h; sourceTree = "<group>"; };
 		9AD7524A1CC86FB800F68C37 /* RJItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJItem.m; sourceTree = "<group>"; };
 		9AD752501CC872FA00F68C37 /* RJItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJItemStore.h; sourceTree = "<group>"; };
@@ -144,6 +167,24 @@
 			path = RJMemorandumTests;
 			sourceTree = "<group>";
 		};
+		9A8F49171CCB121700F9AAA2 /* CYLPlusButton */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F49181CCB121700F9AAA2 /* CYLPlusButtonSubclass.h */,
+				9A8F49191CCB121700F9AAA2 /* CYLPlusButtonSubclass.m */,
+			);
+			path = CYLPlusButton;
+			sourceTree = "<group>";
+		};
+		9A8F49231CCB140E00F9AAA2 /* RJItemListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F49241CCB140E00F9AAA2 /* RJItemListViewController.h */,
+				9A8F49251CCB140E00F9AAA2 /* RJItemListViewController.m */,
+			);
+			path = RJItemListViewController;
+			sourceTree = "<group>";
+		};
 		9AD752411CC86E6F00F68C37 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +195,7 @@
 		9AD752421CC86E6F00F68C37 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9A8F49231CCB140E00F9AAA2 /* RJItemListViewController */,
 				9AD752531CC8CC4700F68C37 /* RJCheckItemViewController */,
 			);
 			path = Controllers;
@@ -171,6 +213,7 @@
 		9AD752441CC86E6F00F68C37 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A8F49171CCB121700F9AAA2 /* CYLPlusButton */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +221,14 @@
 		9AD752451CC86E6F00F68C37 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9A8F491B1CCB128F00F9AAA2 /* btn_addpost_pressed@2x.png */,
+				9A8F491C1CCB128F00F9AAA2 /* btn_addpost@2x.png */,
+				9A8F490B1CCB114A00F9AAA2 /* ic_home_blue@2x.png */,
+				9A8F490C1CCB114A00F9AAA2 /* ic_home_gray@2x.png */,
+				9A8F490D1CCB114A00F9AAA2 /* ic_checkList_blue@2x.png */,
+				9A8F490E1CCB114A00F9AAA2 /* ic_checkList_gray@2x.png */,
+				9A8F490F1CCB114A00F9AAA2 /* ic_addNewItem_gray@2x.png */,
+				9A8F49101CCB114A00F9AAA2 /* ic_addNewItem_blue@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -200,6 +251,7 @@
 		9AD752481CC86F6300F68C37 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9A8F491F1CCB136000F9AAA2 /* RJMacro.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -305,7 +357,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8F49121CCB114A00F9AAA2 /* ic_home_gray@2x.png in Resources */,
+				9A8F49131CCB114A00F9AAA2 /* ic_checkList_blue@2x.png in Resources */,
+				9A8F49161CCB114A00F9AAA2 /* ic_addNewItem_blue@2x.png in Resources */,
+				9A8F491E1CCB128F00F9AAA2 /* btn_addpost@2x.png in Resources */,
+				9A8F49141CCB114A00F9AAA2 /* ic_checkList_gray@2x.png in Resources */,
 				9A4799231CC67E3D00F237C0 /* Assets.xcassets in Resources */,
+				9A8F49111CCB114A00F9AAA2 /* ic_home_blue@2x.png in Resources */,
+				9A8F491D1CCB128F00F9AAA2 /* btn_addpost_pressed@2x.png in Resources */,
+				9A8F49151CCB114A00F9AAA2 /* ic_addNewItem_gray@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +434,9 @@
 				9A4799181CC67E3D00F237C0 /* AppDelegate.m in Sources */,
 				9A4799211CC67E3D00F237C0 /* RJMemorandum.xcdatamodeld in Sources */,
 				9AD7524B1CC86FB800F68C37 /* RJItem.m in Sources */,
+				9A8F49261CCB140E00F9AAA2 /* RJItemListViewController.m in Sources */,
 				9AD752521CC872FA00F68C37 /* RJItemStore.m in Sources */,
+				9A8F491A1CCB121700F9AAA2 /* CYLPlusButtonSubclass.m in Sources */,
 				9AD752561CC8CC6600F68C37 /* RJCheckItemViewController.m in Sources */,
 				9A4799151CC67E3D00F237C0 /* main.m in Sources */,
 			);
@@ -486,6 +548,7 @@
 			baseConfigurationReference = E6DC16FD7876D3A3445C50F8 /* Pods-RJMemorandum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RJMemorandum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -499,6 +562,7 @@
 			baseConfigurationReference = 0B27B5777F88CDF07FB7AA50 /* Pods-RJMemorandum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RJMemorandum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
