@@ -23,6 +23,8 @@
 		9A8F491D1CCB128F00F9AAA2 /* btn_addpost_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F491B1CCB128F00F9AAA2 /* btn_addpost_pressed@2x.png */; };
 		9A8F491E1CCB128F00F9AAA2 /* btn_addpost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8F491C1CCB128F00F9AAA2 /* btn_addpost@2x.png */; };
 		9A8F49261CCB140E00F9AAA2 /* RJItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F49251CCB140E00F9AAA2 /* RJItemListViewController.m */; };
+		9A8F492D1CCB39C100F9AAA2 /* ItemCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F492C1CCB39C100F9AAA2 /* ItemCardView.m */; };
+		9A8F49311CCB5CA000F9AAA2 /* RJNewItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F49301CCB5CA000F9AAA2 /* RJNewItemViewController.m */; };
 		9AD7524B1CC86FB800F68C37 /* RJItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD7524A1CC86FB800F68C37 /* RJItem.m */; };
 		9AD752521CC872FA00F68C37 /* RJItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD752511CC872FA00F68C37 /* RJItemStore.m */; };
 		9AD752561CC8CC6600F68C37 /* RJCheckItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD752551CC8CC6600F68C37 /* RJCheckItemViewController.m */; };
@@ -64,6 +66,10 @@
 		9A8F491F1CCB136000F9AAA2 /* RJMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJMacro.h; sourceTree = "<group>"; };
 		9A8F49241CCB140E00F9AAA2 /* RJItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJItemListViewController.h; sourceTree = "<group>"; };
 		9A8F49251CCB140E00F9AAA2 /* RJItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJItemListViewController.m; sourceTree = "<group>"; };
+		9A8F492B1CCB39C100F9AAA2 /* ItemCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCardView.h; sourceTree = "<group>"; };
+		9A8F492C1CCB39C100F9AAA2 /* ItemCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCardView.m; sourceTree = "<group>"; };
+		9A8F492F1CCB5CA000F9AAA2 /* RJNewItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJNewItemViewController.h; sourceTree = "<group>"; };
+		9A8F49301CCB5CA000F9AAA2 /* RJNewItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJNewItemViewController.m; sourceTree = "<group>"; };
 		9AD752491CC86FB800F68C37 /* RJItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJItem.h; sourceTree = "<group>"; };
 		9AD7524A1CC86FB800F68C37 /* RJItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJItem.m; sourceTree = "<group>"; };
 		9AD752501CC872FA00F68C37 /* RJItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJItemStore.h; sourceTree = "<group>"; };
@@ -185,6 +191,24 @@
 			path = RJItemListViewController;
 			sourceTree = "<group>";
 		};
+		9A8F492A1CCB39C100F9AAA2 /* ItemCardView */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F492B1CCB39C100F9AAA2 /* ItemCardView.h */,
+				9A8F492C1CCB39C100F9AAA2 /* ItemCardView.m */,
+			);
+			path = ItemCardView;
+			sourceTree = "<group>";
+		};
+		9A8F492E1CCB5C8900F9AAA2 /* RJNewItemViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F492F1CCB5CA000F9AAA2 /* RJNewItemViewController.h */,
+				9A8F49301CCB5CA000F9AAA2 /* RJNewItemViewController.m */,
+			);
+			path = RJNewItemViewController;
+			sourceTree = "<group>";
+		};
 		9AD752411CC86E6F00F68C37 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +219,7 @@
 		9AD752421CC86E6F00F68C37 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9A8F492E1CCB5C8900F9AAA2 /* RJNewItemViewController */,
 				9A8F49231CCB140E00F9AAA2 /* RJItemListViewController */,
 				9AD752531CC8CC4700F68C37 /* RJCheckItemViewController */,
 			);
@@ -213,6 +238,7 @@
 		9AD752441CC86E6F00F68C37 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A8F492A1CCB39C100F9AAA2 /* ItemCardView */,
 				9A8F49171CCB121700F9AAA2 /* CYLPlusButton */,
 			);
 			path = Views;
@@ -433,7 +459,9 @@
 			files = (
 				9A4799181CC67E3D00F237C0 /* AppDelegate.m in Sources */,
 				9A4799211CC67E3D00F237C0 /* RJMemorandum.xcdatamodeld in Sources */,
+				9A8F49311CCB5CA000F9AAA2 /* RJNewItemViewController.m in Sources */,
 				9AD7524B1CC86FB800F68C37 /* RJItem.m in Sources */,
+				9A8F492D1CCB39C100F9AAA2 /* ItemCardView.m in Sources */,
 				9A8F49261CCB140E00F9AAA2 /* RJItemListViewController.m in Sources */,
 				9AD752521CC872FA00F68C37 /* RJItemStore.m in Sources */,
 				9A8F491A1CCB121700F9AAA2 /* CYLPlusButtonSubclass.m in Sources */,

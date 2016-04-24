@@ -9,6 +9,8 @@
 
 #import "CYLPlusButtonSubclass.h"
 #import "CYLTabBarController.h"
+#import "RJNewItemViewController.h"
+#import "AppDelegate.h"
 @implementation CYLPlusButtonSubclass
 
 + (void)load {
@@ -26,6 +28,16 @@
   return button;
 }
 - (void)clickPublish {
-
+    RJNewItemViewController* rvc = [[RJNewItemViewController alloc]init];
+    UINavigationController* nvc = [[UINavigationController alloc]initWithRootViewController:rvc];
+    UINavigationController *mainNav = (UINavigationController *)self.window.rootViewController;
+    for (UIViewController *temp in mainNav.viewControllers) {
+        if ([temp isKindOfClass:[CYLTabBarController class]]) {
+            CYLTabBarController *cv = (CYLTabBarController *)temp;
+            UIViewController *viewController = cv.selectedViewController;
+            [viewController presentViewController:nvc animated:YES completion:nil];
+            break;
+        }
+    }
 }
 @end

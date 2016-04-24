@@ -8,6 +8,7 @@
 
 #import "RJItemStore.h"
 #import "RJItem.h"
+#import "RJMacro.h"
 static RJItemStore* itemStoreInstance = nil;
 @interface RJItemStore()
 @property (nonatomic,strong) NSMutableArray<RJItem*>* items;
@@ -34,7 +35,7 @@ static RJItemStore* itemStoreInstance = nil;
     return _items;
 }
 -(RJItem*) getRandomItem{
-    if (![_items count]) {
+    if ([_items count]) {
         return _items[arc4random()%[_items count]];
     }
     return nil;
@@ -44,5 +45,6 @@ static RJItemStore* itemStoreInstance = nil;
     NSInteger itemId = [_items count]>0 ? [_items lastObject].itemId + 1 : 0;
     RJItem* item = [[RJItem alloc]initWithTitle:title content:content timeStamp:timeStamp itemId:itemId];
     [_items addObject:item];
+    [[NSNotificationCenter defaultCenter]postNotificationName:kNewItemNotification object:@{@"item":item}];
 }
 @end

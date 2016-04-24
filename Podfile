@@ -9,4 +9,5 @@ pod 'Masonry'
 pod 'FMDB'
 pod 'CYLTabBarController'
 pod 'ZLSwipeableView'
+pod 'ICTextView'
 end

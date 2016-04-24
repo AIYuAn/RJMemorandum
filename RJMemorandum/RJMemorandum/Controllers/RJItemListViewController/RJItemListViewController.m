@@ -7,12 +7,12 @@
 //
 
 #import "RJItemListViewController.h"
-
+#import "RJMacro.h"
 @implementation RJItemListViewController
 #pragma makr - Life cycle 
 -(void) viewDidLoad{
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor redColor]];
+    [self.view setBackgroundColor:RGBCOLOR(224, 224, 224)];
 }
 -(void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
