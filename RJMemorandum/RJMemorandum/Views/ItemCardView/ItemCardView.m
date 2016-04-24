@@ -9,9 +9,12 @@
 #import "ItemCardView.h"
 #import "RJItem.h"
 #import "RJMacro.h"
+#import "AppDelegate.h"
+#import "RJNewItemViewController.h"
 @interface ItemCardView()
 @property (nonatomic,strong) UILabel *titleLabel;
 @property (nonatomic,strong) UILabel *contentLabel;
+@property (nonatomic) RJItem* item;
 @end
 @implementation ItemCardView
 - (instancetype)init {
@@ -63,6 +66,7 @@
     
 }
 -(void) RefreshContentWithItem:(RJItem *)item{
+    _item = item;
     if(item == nil){
         _titleLabel.text = @"尚无记录";
         _contentLabel.text = @"还没有记录哦，请点击下方+添加新的记录~";
@@ -71,5 +75,15 @@
         _contentLabel.text = item.content;
     }
     [_contentLabel sizeToFit];
+    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
+    [self addGestureRecognizer:tap];
+    
+}
+-(void) tapAction:(id) sender{
+    RJNewItemViewController* rvc = [[RJNewItemViewController alloc]init];
+    UINavigationController* nvc = [[UINavigationController alloc]initWithRootViewController:rvc];
+    UINavigationController *mainNav = (UINavigationController *)self.window.rootViewController;
+    UIViewController *temp = [mainNav topViewController];
+    [temp presentViewController:nvc animated:YES completion:nil];
 }
 @end
